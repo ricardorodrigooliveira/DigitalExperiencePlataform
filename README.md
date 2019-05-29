@@ -1,4 +1,4 @@
-echo "# DIGITAL-EXPERIENCE-PLATAFORM" >> README.md
+# DIGITAL-EXPERIENCE-PLATAFORM
 git init
 git add README.md
 git commit -m "first commit"
