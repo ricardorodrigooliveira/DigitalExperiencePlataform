@@ -1,0 +1,29 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Nossa primeira aplicação em nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardorodrigooliveira/DIGITAL-EXPERIENCE-PLATAFORM-2.git"
+  },
+  "author": "Ricardo Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardorodrigooliveira/DIGITAL-EXPERIENCE-PLATAFORM-2/issues"
+  },
+  "homepage": "https://github.com/ricardorodrigooliveira/DIGITAL-EXPERIENCE-PLATAFORM-2#readme",
+  "keywords": [
+    "node",
+    "app",
+    "pagina"
+  ],
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
