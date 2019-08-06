@@ -15,23 +15,18 @@ $listaNumeros = array(17, 234, 45, 2, 8);
 print_r($listaNumeros);
 echo "<br>";
 echo $listaNumeros[2];
+echo "<br>";
 
 $nomes = array('Gustavo', 'Eduardo', 'Diogo');
-
 print_r($nomes);
 echo "<br>";
 echo $nomes[0];
+echo "<br>";
 
 // Arrays Associativos
-
-$nomes2 = array("primeiro_nome" => 'Amanda',
-"segundo_nome" => 'Rita',
-"terceiro_nome" => 'Regina');
-echo "<br>";
+$nomes2 = array("primeiro_nome" => 'Amanda',"segundo_nome" => 'Rita',"terceiro_nome" => 'Regina');
 print_r($nomes2);
-
 echo "<br>";
-
 echo $nomes2['segundo_nome'];
 
 ?>

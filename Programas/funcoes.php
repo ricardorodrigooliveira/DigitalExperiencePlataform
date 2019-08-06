@@ -25,6 +25,21 @@
       }
 
       //init();
+
+      function calculaMedia(){
+        $nome = $_GET["nome"];
+        //$disciplina = $_GET["disciplina"];
+        $nac = $_GET["nac"];
+        $ps = $_GET["ps"];
+        $am = $_GET["am"];
+
+        $nome = $_GET['nome'];
+
+        $media = (($nac*0.2)+($ps*0.3)+($am*0.5));
+
+        return $media;
+
+      }
      ?>
   </body>
 </html>
