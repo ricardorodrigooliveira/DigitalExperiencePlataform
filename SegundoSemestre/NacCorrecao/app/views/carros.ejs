@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carros</title>
+</head>
+<body>
+    
+    <h1>Carros</h1>
+
+
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Marca</td>
+            <td>Modelo</td>
+            <td>Cor</td>
+            <td>Placa</td>
+        </tr>    
+
+        <%  for(var i = 0; i < carros.length; i++) { %>
+
+        <tr>
+            <td><%=  carros[i].id_carro  %></td>
+            <td><%=  carros[i].marca  %></td>
+            <td><%=  carros[i].modelo  %></td>
+            <td><%=  carros[i].cor  %></td>
+            <td><%=  carros[i].placa  %></td>
+        </tr>   
+
+        <% } %>
+
+    </table>
+
+
+</body>
+</html>
