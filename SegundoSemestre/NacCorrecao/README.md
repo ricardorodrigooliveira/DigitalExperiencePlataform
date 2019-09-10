@@ -213,19 +213,19 @@ module.express = function(){
 Exportação do modulo de conexão para os arquivos de rotas
 
 ```node.js
-var dbConnection = require('../../config/dbConnection');
+var dbConnection =  require('../../config/dbConnection');
 
-module.express = function(application){
+module.exports = function(application){
 
     var connection = dbConnection();
 
-    application.get('/', function(req, res){
-        
-        connection.query('select * from carro', function(error, result){
-            //res.send('carros');
-            res.render('carros',{carros : result});
-        })
-    });
+    application.get('/carros', function(req, res){
+        connection.query('SELECT * FROM carro', function(error, result){
+        //   res.send(result);
+        res.render('carros', {carros : result});
+        });
+       
+     });
 }
 ```
 
@@ -281,11 +281,11 @@ e app.js é alterado para
 var application = require('./config/server');
 
 application.get('/', function(req, res){
-    //res.send('home');
-    res.render('home');
+    res.send('Bem vindo ao Sistema Novo do Detran');
 });
 
+
 application.listen(1000, function(){
-    console.log('serviço no ar');
-})
+    console.log('Servidor está ON');
+});
 ```
