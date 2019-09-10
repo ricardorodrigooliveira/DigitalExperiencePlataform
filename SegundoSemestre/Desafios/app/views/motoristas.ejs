@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Motorista</title>
+</head>
+<body>
+    
+    <h1>Motorista</h1>
+
+
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Nome</td>
+            <td>Sobrenomes</td>
+            <td>RG</td>
+            <td>CPF</td>
+            <td>CEP</td>
+        </tr>    
+
+        <%  for(var i = 0; i < motoristas.length; i++) { %>
+
+        <tr>
+            <td><%= motoristas[i].id_motorista  %></td>
+            <td><%= motoristas[i].nome  %></td>
+            <td><%= motoristas[i].sobrenome  %></td>
+            <td><%= motoristas[i].rg  %></td>
+            <td><%= motoristas[i].cpf  %></td>
+            <td><%= motoristas[i].cep  %></td>
+        </tr>   
+
+        <% } %>
+
+    </table>
+
+
+</body>
+</html>
