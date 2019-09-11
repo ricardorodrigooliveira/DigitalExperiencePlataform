@@ -193,6 +193,39 @@ application.listen(1000, function(){
 
 # Conexão com Banco de Dados
 
+## Crie o banco
+
+```sql
+create database nac;
+
+use nac;
+
+create table carro (
+id_carro int(3) auto_increment,
+marca varchar(45),
+modelo varchar(45),
+cor varchar(45),
+placa varchar(45),
+primary key (id_carro));
+
+create table moto (
+id_moto int(3) auto_increment,
+marca varchar(45),
+modelo varchar(45),
+cor varchar(45),
+placa varchar(45),
+primary key (id_moto));
+
+create table motorista (
+id_motorista int(3) auto_increment,
+nome varchar(45),
+sobrenome varchar(45),
+rg varchar(45),
+cpf varchar(45),
+cep varchar(45),
+primary key (id_motorista));
+```
+
 No diretório server criamos o arquivo para configurar a conexão
 
 dbConnection.js que irá conter...
