@@ -191,7 +191,7 @@ application.listen(1000, function(){
 })
 ```
 
-# Conecção com Banco de Dados
+# Conexão com Banco de Dados
 
 No diretório server criamos o arquivo para configurar a conexão
 
