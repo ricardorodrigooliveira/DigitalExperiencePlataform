@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 30,
+            "database": "ORCL",
+            "dialect": "OracleDB",
+            "name": "DEP",
+            "password": "ricardo",
+            "port": 1521,
+            "server": "127.0.0.1",
+            "username": "digital_experience"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
